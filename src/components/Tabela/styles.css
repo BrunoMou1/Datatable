@@ -1,0 +1,67 @@
+.container {
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  max-width: 1120px;
+}
+
+.table {
+  width: 100%;
+  margin: 16px;
+  border: 0.5px solid #B7B7B7;
+  border-radius: 10px;
+}
+  
+.tableHeader {
+  border-radius: 10px 10px 0 0;
+  background-color: #F0F0F0;
+  display: flex;
+  align-items: center;
+  padding: 10px 12.5px;
+}
+
+.tableHeader p {
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.content {
+  margin: 16px;
+  border: 0.5px solid #DDDDDD;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content th {
+  background-color: #F0F0F0;
+  border: 1px solid #DDDDDD;
+  padding: 12px 0;
+}
+
+.content td {
+  text-align: center;
+  padding: 12px 0;
+  border: 1px solid #DDDDDD;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.checkbox:checked{
+  background-color: black;
+}
