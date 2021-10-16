@@ -59,7 +59,7 @@ function Sumario() {
           <div className="summaryHeader">
             <p>Sumário dos recursos dos servidores</p>
           </div>
-          <div className="content">
+          <div className="summaryContent">
             <div className="left">
               <p className="content-item-left">Servidores selecionados</p>
               <p className="content-item-left">Total de Memória</p>

@@ -28,26 +28,27 @@
   margin: 0;
 }
 
-.content {
+.tableContent {
   margin: 16px;
   border: 0.5px solid #DDDDDD;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
+  font-size: 14px;
 }
 
-.content table {
+.tableContent table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.content th {
+.tableContent th {
   background-color: #F0F0F0;
   border: 1px solid #DDDDDD;
   padding: 12px 0;
 }
 
-.content td {
+.tableContent td {
   text-align: center;
   padding: 12px 0;
   border: 1px solid #DDDDDD;
@@ -60,8 +61,4 @@
   background-color: #fff;
   cursor: pointer;
   border: 1px solid black;
-}
-
-.checkbox:checked{
-  background-color: black;
 }

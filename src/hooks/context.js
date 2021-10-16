@@ -4,11 +4,10 @@ const ServerContext = createContext()
 
 export function ServerProvider({ children }) {
   const [server, setServer] = useState([])
-  const [dataAlreadyExist, setDataAlreadyExist] = useState(false)
 
   return (
     <ServerContext.Provider
-      value={{ server, setServer, dataAlreadyExist, setDataAlreadyExist }}
+      value={{ server, setServer }}
     >
       {children}
     </ServerContext.Provider>

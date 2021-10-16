@@ -5,13 +5,13 @@ import './styles.css';
 
 
 function Tabela() {
-  const { server, setServer, setDataAlreadyExist } = useServer()
+  const { server, setServer } = useServer()
   const [data, setData] = useState([])
 
   function handleSelectData(id) {
-    let dat = server.some(item => item.id_vm === id)
+    let dataExist = server.some(item => item.id_vm === id)
 
-    if (dat) {
+    if (dataExist) {
       const newItemData = server.filter(item => item.id_vm !== id)
       setServer(newItemData)
 
@@ -19,8 +19,6 @@ function Tabela() {
       const itemData = data.filter(item => item.id_vm === id)
       setServer([...server, ...itemData])
     }
-    setDataAlreadyExist(dat)
-    console.log(server)
   }
 
   async function loadData() {
@@ -40,7 +38,7 @@ function Tabela() {
           <div className="tableHeader">
             <p>Tabela de servidores</p>
           </div>
-          <div className="content">
+          <div className="tableContent">
             <table>
               <thead>
                 <tr>

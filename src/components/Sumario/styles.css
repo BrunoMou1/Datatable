@@ -28,12 +28,14 @@
   margin: 0;
 }
 
-.content {
+.summaryContent{
   margin: 16px;
   border: 0.5px solid #DDDDDD;
   border-radius: 5px;
   display: flex;
+  font-size: 14px;
   flex-direction: row;
+  font-weight: bold;
 }
 
 .left {
